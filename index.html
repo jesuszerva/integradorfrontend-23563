@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jesús Zerpa">
+    <meta name="description" content="Pagina Proyecto integrador ">
+    <meta name="keywords" content="HTML, CSS, Bootstrap">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to- fit=no"
+    />
+    <!-- Titulo de la página -->
+    <title>Jesús Zerpa | Integrador Parcial con bootstrap</title>
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="CSS/integradorBootstrap.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> 
+  <!-- google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Menu de Navagacion -->
+    <div class="container-fluid letramenu">   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-0 p-0">
+      <div class="container-fluid encabezado bg-opacity-75">
+        <a class="navbar-brand text-white" href="https://buenosaires.gob.ar/educacion/codo-codo-40" target="_blank">
+          <img class="img-codo animate__animated animate__rubberBand" 
+            src="images/logo-codoacodo.png"
+            width="90"
+            height="60"
+            alt="Codo a Codo" 
+          />
+        </a>
+        <h3 class=" colortitulo tituloNav ">Conf Bs As</h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 enlaces d-flex justify-content-center align-items-center ms-auto"
+          >
+            <li class="nav-item liHover">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >La conferencia</a
+              >
+            </li>
+            <li class="nav-item liHover">
+              <a class="nav-link active text-white opacity-50 " href="#oradores"
+                >Los oradores</a
+              >
+            </li>
+            <li class="nav-item liHover">
+              <a class="nav-link active text-white opacity-50 " href="#"
+                >El lugar y la fecha</a
+              >
+            </li>
+            <li class="nav-item liHover">
+              <a class="nav-link active text-white opacity-50 " href="#soyorador"
+                >Conviertete en orador</a
+              >
+            </li>
+            <li class="nav-item liHover">
+              <a class="nav-link p-2 text-success" href="#">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel Encabezado -->
+    <div class="">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="images/baires1.jpg"
+              class="d-block w-100 brilloImagen"
+              alt="Buenos Aires 1"
+            />
+            <div class="carousel-caption d-md-block text-white text-center">
+              <h5>Conf Bs As</h5>
+              <p>
+                Llega por primera vez a la Argentina, un evento para compartir
+                con nuestra comunidad el conocimiento y la experiencia de los
+                expertosque están creando el futuro de la Internet. Ven a
+                conocer a miembros del evento, a otros estudiantes de Codo a
+                Codo 4.0 y a los oradores de primer nivel que tenemos para ti.
+                Te esperamos!.
+              </p>
+              <div class="">
+                <a
+                  href="#soyorador"
+                  class="btn btn-transparent mx-1 btn-l text-white border border-secondary"
+                  >Quiero ser orador</a
+                >
+                <a href="#" class="btn btn-success mx-1 btn-l text-white"
+                  >Comprar tickets</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="images/baires2.jpg"
+              class="d-block w-100 brilloImagen"
+              alt="Buenos Aires 2"
+            />
+            <div class="carousel-caption d-md-block text-white text-start">
+              <h5>Conf Bs As</h5>
+              <p>
+                Llega por primera vez a la Argentina, un evento para compartir
+                con nuestra comunidad el conocimiento y la experiencia de los
+                expertosque están creando el futuro de la Internet. Ven a
+                conocer a miembros del evento, a otros estudiantes de Codo a
+                Codo 4.0 y a los oradores de primer nivel que tenemos para ti.
+                Te esperamos!.
+              </p>
+              <div class="">
+                <a
+                  href="#soyorador"
+                  class="btn btn-transparent mx-1 btn-l text-white border border-secondary"
+                  >Quiero ser orador</a
+                >
+                <a href="#" class="btn btn-success mx-1 btn-l text-white"
+                  >Comprar tickets</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/baires3.jpg"
+              class="d-block w-100 brilloImagen"
+              alt="Buenos Aires 3"
+            />
+            <div class="carousel-caption d-md-block text-white text-end">
+              <h5>Conf Bs As</h5>
+              <p>
+                Llega por primera vez a la Argentina, un evento para compartir
+                con nuestra comunidad el conocimiento y la experiencia de los
+                expertosque están creando el futuro de la Internet. Ven a
+                conocer a miembros del evento, a otros estudiantes de Codo a
+                Codo 4.0 y a los oradores de primer nivel que tenemos para ti.
+                Te esperamos!.
+              </p>
+              <div class="">
+                <a
+                  href="#soyorador"
+                  class="btn btn-transparent mx-1 btn-l text-white border border-secondary"
+                  >Quiero ser orador</a
+                >
+                <a href="#" class="btn btn-success mx-1 btn-l text-white"
+                  >Comprar tickets</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+    <!-- Conoce a los oradores -->
+    <div class="text-center mt-2" id="oradores">
+      <div class="textoChico">CONOCE A LOS</div>
+      <div class="fs-4">ORADORES</div>
+    </div>
+    <!-- ORDORES -->
+    <div class="d-flex justify-content-center mt-2 mb-5 flex-wrap" >
+      <!-- Orador Steve -->
+      <div class="card mx-2 oradorAnimado" style="width: 18rem">
+        <img src="images/steve.jpg" class="card-img-top" alt="steve" />
+        <div class="card-body">
+          <div class="d-flex botones mb-3">
+            <a href="#" class="btn btn-warning mx-1 btn-sm fw-bolder"
+              >JavaScript</a
+            >
+            <a href="#" class="btn btn-info mx-1 btn-sm text-light fw-bolder"
+              >React</a
+            >
+          </div>
+          <h5 class="card-title">Steve Jobs</h5>
+          <p class="card-text">Steve Paul Jobs, más conocido como Steve Jobs, fue un informático y empresario estadounidense. Se le conoce por ser cofundador de Apple y máximo accionista de The Walt Disney Company. Nació en San Francisco el 24 de febrero de 1955. Murió a causa de un cáncer el 5 de octubre de 2011 en Palo Alto, California.
+          </p>
+        </div>
+      </div>
+      <!-- Orador Bill -->
+      <div class="card mx-2 oradorAnimado" style="width: 18rem">
+        <img src="images/bill.jpg" class="card-img-top" alt="bill gates" />
+        <div class="card-body">
+          <div class="d-flex botones mb-3">
+            <a href="#" class="btn btn-warning mx-1 btn-sm fw-bolder"
+              >JavaScript</a
+            >
+            <a href="#" class="btn btn-info mx-1 btn-sm text-light fw-bolder"
+              >React</a
+            >
+          </div>
+          <h5 class="card-title">Bill Gates</h5>
+          <p class="card-text">Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen. Durante su carrera en Microsoft, Gates ocupó los cargos de presidente, director ejecutivo (CEO), presidente y arquitecto jefe de software, además de ser el mayor accionista individual hasta mayo de 2014.
+          </p>
+        </div>
+      </div>
+      <!-- Ada Lovelace -->
+      <div class="card mx-2 oradorAnimado" style="width: 18rem">
+        <img src="images/ada.jpeg" class="card-img-top" alt="Ada Lovelace" />
+        <div class="card-body">
+          <div class="d-flex botones mb-3">
+            <a
+              href="#"
+              class="btn btn-secondary mx-1 btn-sm text-light fw-bolder"
+              >Negocios</a
+            >
+            <a href="#" class="btn btn-danger mx-1 btn-sm text-light fw-bolder"
+              >Startups</a
+            >
+          </div>
+          <h5 class="card-title">Ada Lovelace</h5>
+          <p class="card-text">Nacida el 10 de diciembre de 1815, Ada Lovelace es considerada por muchos la primera programadora de la historia. Matemática y escritora inglesa, hija del famoso poeta Lord Byron, revolucionó la ciencia con sus conocimientos matemáticos ideando, con el apoyo de sus amigos inventores, el primer programa informático.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Seccion 3 Foto playa y texto-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md p-0">
+          <img src="images/honolulu.jpg" alt="honolulu" class="img-fluid imgAnimada" />
+        </div>
+        <div class="col-md bg-grisOscuro text-light imgAnimada">
+          <div class="mt-2 mb-3 fs-3">Bs Aires octubre</div>
+          <div class="mb-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+            quia repellendus nisi voluptate minus sapiente repudiandae mollitia
+            sint, veniam tempora?
+          </div>
+          <div class="mb-2">
+            <a href="" class="btn btn-outline-light">Conocer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Convierte en orador -->
+      <div class="text-center mt-2 mb-3 " id="soyorador">
+        <div class="textoChico">CONVIERTETE EN UN</div>
+        <div class="fs-4">ORADOR</div>
+      </div>
+      <!-- Formulario -->
+    <div class="vstack gap-2 col-md-8 mx-auto">
+      <form> 
+      <div class="d-flex justify-content-center align-items-center mb-0 text-center">
+        <p>"Anótate como orador para dar una charla de ignite. Cuéntanos de qué quieres hablar!</p>
+      </div>
+      <div class="row g-3 mb-3">
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control mb-0" id="exampleFormControlTextarea1" rows="5" placeholder="¿Sobre qué quieres hablar?"></textarea>
+      </div>
+      <label class="fs-6 mt-0 form-label text-secondary">Recuerda incluir un titulo para tu charla.</label>
+      <div class="d-grid gap-2" >
+       
+        <button class="btnEnviar w-100 mt-3" type="submit">Enviar</button>
+        </a>
+      </div>
+    </form>
+    </div>
+    <!-- FOOTER -->
+
+    <div class="bg-footer mb-0 "> 
+      <div class=" container-fluid d-flex py-4 flex-column align-items-center gap-3 flex-lg-row justify-content-lg-center gap-lg-5 mt-3 letramenu">
+        <a class="text-decoration-none text-white " href=""> Preguntas frecuentes</a>
+        <a class="text-decoration-none text-white" href="">Contactanos</a>
+        <a class="text-decoration-none text-white" href="">Prensa</a>
+        <a class="text-decoration-none text-white" href="">Conferencias</a>
+        <a class="text-decoration-none text-white" href="">Términos y condiciones</a>
+        <a class="text-decoration-none text-white" href="">Privacidad</a>
+        <a class="text-decoration-none text-white" href="">Estudiantes</a>
+    </div>
+    <div class="derechos-de-autor d-flex justify-content-center align-items-center m-0">Creado por Jesús Zerpa (2023) &#169;</div>
+    </div>
+      
+    
+    <!-- JavaScript de BOOSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

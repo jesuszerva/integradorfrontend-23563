@@ -1,0 +1,114 @@
+
+.letramenu{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+.tipoletra {
+    font-family: 'Quicksand', sans-serif;
+}
+
+ .tituloNav:hover{
+    color: rgb(253, 202, 0, 0.8);
+    
+ }
+
+ .oradorHover a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+ }
+ .colortitulo {
+    color: white;
+ }
+ .liHover a:hover{
+    font-size: 1.1rem;
+    text-decoration: underline;
+    padding-left: 3px;
+    padding-right: 3px;
+ }
+
+.encabezado {
+    background-color: rgb(51, 58, 64); 
+}
+/* Animaciones logo */
+.oradorAnimado:hover {
+    animation: pulse;
+  animation-duration: 0.9s; 
+  background-color: rgb(244, 244, 232);
+}
+
+.imgAnimada:hover {
+    animation: flash;
+    animation-duration: 2s;
+}
+
+.brilloImagen{
+    filter: brightness(60%);
+}
+
+h3{
+    display: inline-block;
+    color: white;
+}
+
+.enlaces{
+    font-size: .8rem;
+}
+
+.textoChico {
+    font-size: .7rem;
+}
+
+.botones a{
+    height: 25px;
+    font-size: .7rem;
+}
+
+.card:hover{
+    box-shadow: 0 0 15px lightgray;
+}
+  
+.bg-grisOscuro {
+    background-color: rgb(54, 58, 64);
+}
+
+/* Formulario */
+.btnEnviar{
+    background-color: rgb(150, 201, 62);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.btnEnviar:hover{
+    background-color: rgb(197, 240, 140);
+    box-shadow: 0 0 15px lightgray;
+    color: black;
+
+}
+
+.bg-footer{
+    background-color: rgb(29, 65, 87);
+}
+
+.divfooter a:hover{
+    font-size: 1.1rem;
+    text-decoration: underline;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.derechos-de-autor{
+    background-color: rgb(29, 65, 87);
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .derechos-de-autor:hover{
+    animation: heartBeat;
+    animation-duration: 0.9s;
+  }
