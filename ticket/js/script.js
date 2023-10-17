@@ -18,20 +18,21 @@
     })
   })()
 
-
+document.getElementById("descuento").disabled = true;
 function calculototal(){
     const precio= 1000;
     let cant = document.getElementById("cant").value;
     if (cant>=1){
+      document.getElementById("descuento").disabled = false;
         let total = cant*precio;
         let desc = document.getElementById("descuento").value;
         total = total - (total*desc/100);
         document.getElementById("total").innerHTML = total;
         document.getElementById("total").className = "bg-info";
-    } else{
+    } else if(cant<=0){
+        document.getElementById("descuento").disabled = true;
         document.getElementById("total").className = "text-danger";
-        document.getElementById("total").innerHTML = "La cantidad de ticket debe ser mayor a cero";
+        document.getElementById("total").innerHTML = "Cantidad debe ser mayor a cero";
     }
     
 }
-

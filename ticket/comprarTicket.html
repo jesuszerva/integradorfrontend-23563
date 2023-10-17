@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary mb-0 p-0">
       <div class="container-fluid encabezado bg-opacity-75">
         <a class="navbar-brand text-white">
-          <img class="img-codo animate__animated animate__rubberBand" 
+          <img  style="aspect-ratio: 349/200;" class="img-codo animate__animated animate__rubberBand" 
             src="../images/logo-codoacodo.png" width="90" height="60" alt="Codo a Codo"/>
         </a>
         <h3 class=" colortitulo tituloNav ">Conf Bs As</h3>
@@ -63,11 +63,55 @@
     </nav>
   </div>
   
+  <!-- Categorias -->
+<div class="container d-flex justify-content-center align-item-center mt-4 flex-wrap">
+  
+    
+      <div class="card m-2 border border-primary" style="width: 15rem; height: 11rem;">
+        <div class=" card-body">
+          <h5 class="card-title text-center">Estudiante</h5>
+          <h6 class="card-subtitle mb-2 mt-3 text-center text-body-secondary">Tienen un descuento</h6>
+          <p class="card-text text-center mt-3 mb-3">80%</p>
+        <footer>
+          <small class="text-body-secondary">*presentar documentación</small>
+        </footer>
+        </div>
+      </div>
+      <div class="card m-2 border-success" style="width: 15rem; height: 11rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center">Trainee</h5>
+          <h6 class="card-subtitle mb-2 mt-3 text-center text-body-secondary">Tienen un descuento</h6>
+          <p class="card-text text-center mt-3 mb-3">50%</p>
+        <footer>
+          <small class="text-body-secondary">*presentar documentación</small>
+        </footer>
+        </div>
+      </div>
+      <div class="card m-2 border border-warning" style="width: 15rem; height: 11rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center">Junior</h5>
+          <h6 class="card-subtitle mb-2 mt-3 text-center text-body-secondary">Tienen un descuento</h6>
+          <p class="card-text text-center mt-3 mb-3">15%</p>
+        <footer>
+          <small class="text-body-secondary">*presentar documentación</small>
+        </footer>
+        </div>
+      </div>
+  
+    
+</div>
+
   <!-- Formulario comprar tickets -->
 <div class="container d-flex justify-content-center">
-  
     <form action="../server/procesarCompra.html" method="post" class="needs-validation" novalidate>
-      <div class="row mt-5 mb-3">
+      <div class=" d-flex justify-content-center mt-3">
+        <header>
+          <h6 class="d-flex justify-content-center">VENTA</h6>
+          <h3>VALOR DEL TICKET $1000</h3>
+        </header>
+      </div>
+      
+      <div class="row mt-2 mb-3">
         <div class="col">
           <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" required> 
           <div class="invalid-feedback">
@@ -81,35 +125,53 @@
           </div>
         </div>
       </div>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="email" name="email" id="email" placeholder="Correo electrónico" class="form-control" required> 
+        </div>
+      </div>
         <div class="row mb-0">
             <div class="col-lg-6">
+              <label for="cant">Cantidad</label>
                 <input type="number" min="1" pattern="^[0-9]+"  name="cant" id="cant" onchange="calculototal()" onkeyup="calculototal()" placeholder="Cantidad de tickets" class="form-control" required>
                 <div class="invalid-feedback">
                   Debe ingresar una cantidad válida}.
                 </div>
-                <p id="demo">Valor ticket $1000</p>
+                <p id="demo">
+                  <small>Valor ticket $1000</small> 
+                </p>
                 <div class="small">
                     
                 </div>
             </div>
             <div class="col-lg-6 mb-3">
+              <label for="descuento">Categoria</label>
               <select class="form-select" id="descuento" onchange="calculototal()">
                 <!-- <option selected>Seleccione una opcion</option> -->
-                <option value="50">Estudiante 50%</option>
-                <option value="30">Profesional 30%</option>
-                <option value="10">Orador 10%</option>
+                <option value="">Seleccione categoria</option>
+                <option value="80">Estudiante 80%</option>
+                <option value="50">Trainee 50%</option>
+                <option value="15">Orador 15%</option>
               </select>
               <div class="invalid-feedback">
                 Debe seleccionar una opcion.
               </div>
             </div> 
-            <div class="col-lg-12 bg-info text-center mt-0">
-                Total a pagar $: <br><span id="total">0</span>
-                <p id="descuento"></p>
-            </div>
+        </div>
+        <div class="row-3">
+          <div class="col bg-info mt-0 form-control pt-3 pb-0" >
+            Total a pagar $: <span id="total">0</span>
+            <p id="descuento"></p>
+        </div>
         </div>
         <div class="row mt-3" >
-          <input type="submit" value="comprar" id="comprar" class="btn btn-primary form-control">
+          <div class="col">
+            <input type="reset" value="Borrar" id="borrar" class="btn btn-success form-control">
+          </div>
+          <div class="col">
+            <input type="submit" value="Resumen" id="comprar" class="btn btn-success form-control">
+          </div>
+          
       </div>
     </form>
 </div>
